@@ -28,3 +28,43 @@ body {
 	overflow: hidden;
 	margin: 0;
 }
+
+.main-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 50px;
+	padding: 10px;
+}
+
+.main-nav-items {
+	list-style: none;
+	text-decoration: none;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.insure-logo {
+	width: auto;
+	height: 12px;
+}
+
+hero {
+	background-color: var(--dark-violet);
+	background-image: url("images/bg-pattern-intro-right-desktop.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 40%;
+	color: #fff;
+	position: relative;
+}
+
+.hero-people {
+	width: 300px;
+	height: auto;
+	object-fit: cover;
+	position: absolute;
+	top: 40px;
+	left: 400px;
+}
