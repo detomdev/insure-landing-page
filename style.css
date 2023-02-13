@@ -22,20 +22,17 @@ body {
 	font-family: Karla, sans-serif;
 	font-size: 16px;
 	background-color: var(--white);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	height: 100vh;
 	/* overflow: hidden; */
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1240px;
+	max-width: 1200px;
 }
 
 header {
 	width: 100%;
 	height: 35px;
-	padding: 20px 140px 20px 115px;
+	padding: 20px 200px 20px 200px;
 	margin: 0;
 	display: flex;
 	flex-direction: row;
@@ -67,19 +64,27 @@ header {
 	padding: 5px 12px;
 }
 
-hero {
-	height: 600px;
-	width: 100%;
+.hero {
+	border: 1px solid black;
 	background-color: var(--dark-violet);
 	color: #fff;
+	padding: 60px 200px 20px 200px;
+	width: 100%;
+	height: 400px;
+	margin-bottom: 100px;
 	position: relative;
-	padding: 75px;
-	margin-bottom: 300px;
 }
+
+.container {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
 .dt-left-img {
 	position: absolute;
 	top: 305px;
-	left: -20px;
+	left: 0px;
 	width: auto;
 	height: 100%;
 	display: block;
@@ -88,7 +93,7 @@ hero {
 .dt-right-img {
 	position: absolute;
 	width: auto;
-	height: 130%;
+	height: 110%;
 	top: 0;
 	right: 0;
 	z-index: 1;
@@ -102,14 +107,13 @@ h3 {
 }
 .desktop-top-line {
 	width: 100px;
-	margin-left: 40px;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	display: block;
 }
 
 h1 {
 	margin-bottom: 10px;
-	padding: 0px 725px 0px 40px;
+	padding: 0px 460px 0px 0px;
 	font-size: 45px;
 	line-height: 2.5rem;
 }
@@ -118,17 +122,17 @@ h1 {
 	font-size: 10px;
 	line-height: 1.75em;
 	margin-bottom: 20px;
-	padding: 10px 700px 0px 40px;
+	padding: 10px 450px 0px 0px;
 	border: 0;
 }
 
 .hero-people {
-	width: 500px;
+	width: 350px;
 	height: auto;
 	object-fit: cover;
 	position: absolute;
-	top: 57px;
-	left: 600px;
+	top: 100px;
+	left: 650px;
 }
 
 .btn-hero {
@@ -138,7 +142,6 @@ h1 {
 	text-transform: uppercase;
 	padding: 8px 25px;
 	border: 1px solid #fff;
-	margin-left: 40px;
 }
 
 h2 {
@@ -161,9 +164,8 @@ h3 {
 
 .why-container {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-beween;
-	width: 800px;
+	justify-content: space-between;
+	width: 100%;
 	margin-bottom: 100px;
 }
 
@@ -173,10 +175,6 @@ p {
 	line-height: 1.75em;
 	padding: 0 20px 0 0;
 	color: var(--dark-greyish-violet);
-}
-
-.why-desc :last-child {
-	padding-right: 30px;
 }
 
 .why-icon {
@@ -195,8 +193,8 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 10px 50px;
-	width: 800px;
+	padding: 10px 50px 10px;
+	/* width: 800px; */
 	margin-bottom: 100px;
 }
 
