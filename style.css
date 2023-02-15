@@ -21,18 +21,18 @@
 body {
 	font-family: Karla, sans-serif;
 	font-size: 16px;
-	background-color: var(--white);
+	background-color: var(--very-light-grey);
 	height: 100vh;
 	/* overflow: hidden; */
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1000px;
 }
 
 .main-header {
 	width: 100%;
 	height: 35px;
-	padding: 25px 140px 25px 200px;
+	padding: 25px 40px 25px 0;
 	margin: 0;
 	display: flex;
 	align-items: center;
@@ -67,15 +67,27 @@ li ul {
 }
 
 .hero {
-	border: 1px solid black;
 	background-color: var(--dark-violet);
 	color: #fff;
-	padding: 60px 0 20px 200px;
+	padding: 60px 0 20px 0;
 	width: 100%;
 	height: 350px;
 	margin-bottom: 250px;
 	position: relative;
 }
+
+.hero-box {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	height: 350px;
+	background-color: var(--dark-violet);
+	display: block;
+	position: absolute;
+	top: 50px;
+	z-index: 0;
+}
+
 .hero-info {
 	padding-right: 40px;
 	width: 400px;
@@ -83,14 +95,16 @@ li ul {
 
 .container {
 	width: 100%;
-	max-width: 765px;
+	max-width: 1000px;
 	margin: 0 auto;
+	background-color: var(--white);
+	padding: 0 100px 40px 100px;
 }
 
 .dt-left-img {
 	position: absolute;
 	top: 250px;
-	left: 0px;
+	left: -100px;
 	width: auto;
 	height: 100%;
 	display: block;
@@ -101,9 +115,10 @@ li ul {
 	width: auto;
 	height: 110%;
 	top: 0;
-	right: 0;
+	left: 620px;
 	/* z-index: 1; */
 	display: block;
+	object-position: 0px -60px;
 }
 
 h1,
@@ -129,16 +144,17 @@ h1 {
 	color: var(--very-light-grey);
 	line-height: 1.75em;
 	margin-bottom: 25px;
+	padding-right: 20px;
 	border: 0;
 }
 
 .hero-people {
-	width: 400px;
+	width: 390px;
 	height: auto;
 	object-fit: cover;
 	position: absolute;
 	top: 60px;
-	left: 575px;
+	left: 375px;
 }
 
 .btn-hero {
